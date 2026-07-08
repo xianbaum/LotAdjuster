@@ -1,168 +1,47 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2D3D09CD-B798-48D9-9605-BD45C035BD4F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Platforms>AnyCPU</Platforms>
+
     <RootNamespace>LotExpander</RootNamespace>
     <AssemblyName>LotAdjuster</AssemblyName>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <ApplicationIcon>LotAdjuster.ico</ApplicationIcon>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>false</MapFileExtensions>
-    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationVersion>3.2.0.0</ApplicationVersion>
-    <BootstrapperEnabled>false</BootstrapperEnabled>
+
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Product>LotAdjuster</Product>
+    <AssemblyTitle>LotAdjuster</AssemblyTitle>
+    <Description>Modify a Sims 2 lot</Description>
+    <Copyright>Copyright (C) 2007-2013 by Mootilda</Copyright>
+    <Version>3.6.0.0</Version>
+    <AssemblyVersion>3.6.0.0</AssemblyVersion>
+    <FileVersion>3.6.0.0</FileVersion>
+    <DefineConstants>$(DefineConstants);ADJUST</DefineConstants>
+    <NoWarn>$(NoWarn);CA1416;SYSLIB0011;CS0618;CS0612</NoWarn>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;ADJUST</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
-    <PlatformTarget>x86</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;ADJUST</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
-    <PlatformTarget>x86</PlatformTarget>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="simpe.helper, Version=0.66.2.38582, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\SimPE\V0_66\simpe.helper.dll</HintPath>
-    </Reference>
-    <Reference Include="simpe.interfaces, Version=1.0.2990.38586, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\SimPE\V0_66\simpe.interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="simpe.package, Version=1.0.2990.38590, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\SimPE\V0_66\simpe.package.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Classes\LETools.cs" />
-    <Compile Include="Classes\R_2ARY_3B76.cs" />
-    <Compile Include="Classes\R_3ARY_00.cs" />
-    <Compile Include="Classes\R_3ARY_01.cs" />
-    <Compile Include="Classes\R_3ARY_03.cs" />
-    <Compile Include="Classes\R_FAMI.cs" />
-    <Compile Include="Classes\R_FPL.cs" />
-    <Compile Include="Classes\R_LotDesc.cs" />
-    <Compile Include="Classes\R_NGBH.cs" />
-    <Compile Include="Classes\R_NHTG.cs" />
-    <Compile Include="Classes\R_PERS.cs" />
-    <Compile Include="Classes\R_POOL.cs" />
-    <Compile Include="Classes\R_ROOF.cs" />
-    <Compile Include="Classes\R_OBJT.cs" />
-    <Compile Include="Classes\R_SMAP.cs" />
-    <Compile Include="Classes\R_STR.cs" />
-    <Compile Include="Classes\R_TXTR.cs" />
-    <Compile Include="Classes\R_VERS.cs" />
-    <Compile Include="Classes\R_VERT.cs" />
-    <Compile Include="Classes\R_WLL.cs" />
-    <Compile Include="Classes\R_XOBJ.cs" />
-    <Compile Include="Classes\R_2ARY_5CEE.cs" />
-    <Compile Include="Classes\R_2ARY.cs" />
-    <Compile Include="Classes\R_3ARY_0C.cs" />
-    <Compile Include="Classes\R_3ARY.cs" />
-    <Compile Include="Classes\Portale.cs" />
-    <Compile Include="Classes\R_TMAP.cs" />
-    <Compile Include="Classes\R_WGRA.cs" />
-    <Compile Include="Classes\R_LOT.cs" />
-    <Compile Include="LEStrings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LEStrings.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Classes\Program.cs" />
-    <EmbeddedResource Include="LEStrings.resx">
-      <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>LEStrings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LotExpander.resx">
-      <DependentUpon>LotExpander.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Classes\R_DESC.cs" />
-    <Compile Include="Classes\R_WRLD.cs" />
-    <Compile Include="Classes\R_XMTO.cs" />
-    <Compile Include="LotExpander.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LotExpander.Designer.cs">
-      <DependentUpon>LotExpander.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 2.0</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\MoveLeft.bmp" />
-    <None Include="Properties\MoveFront.bmp" />
-    <None Include="Properties\MoveBack.bmp" />
-    <None Include="Properties\MoveRight.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <BaseApplicationManifest Include="Properties\app.manifest" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="LotAdjuster.ico" />
-    <Content Include="Properties\LotAdjuster.bmp" />
-    <Content Include="Properties\LotAdjuster.ico" />
-  </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
   <PropertyGroup>
-    <PostBuildEvent>md "$(TargetDir)Data"
-copy "..\..\..\..\..\..\SimPE\V0_64\Data\tgi.xml" "$(TargetDir)Data\tgi.xml"</PostBuildEvent>
+    <SimPeReleaseDir Condition="'$(SimPeReleaseDir)' == ''">$(MSBuildThisFileDirectory)..\SimPE\__Release\</SimPeReleaseDir>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="simpe.helper">    <HintPath>$(SimPeReleaseDir)simpe.helper.dll</HintPath>    <Private>true</Private></Reference>
+    <Reference Include="simpe.interfaces"><HintPath>$(SimPeReleaseDir)simpe.interfaces.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="simpe.package">   <HintPath>$(SimPeReleaseDir)simpe.package.dll</HintPath>   <Private>true</Private></Reference>
+    <Reference Include="simpe.clst">      <HintPath>$(SimPeReleaseDir)simpe.clst.dll</HintPath>      <Private>true</Private></Reference>
+    <Reference Include="simpe.splash">    <HintPath>$(SimPeReleaseDir)simpe.splash.dll</HintPath>    <Private>true</Private></Reference>
+    <Reference Include="GDF">             <HintPath>$(SimPeReleaseDir)GDF.dll</HintPath>             <Private>true</Private></Reference>
+    <Reference Include="NetDocks">        <HintPath>$(SimPeReleaseDir)NetDocks.dll</HintPath>        <Private>true</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(SimPeReleaseDir)*.dll"
+          Exclude="$(SimPeReleaseDir)simpe.helper.dll;$(SimPeReleaseDir)simpe.interfaces.dll;$(SimPeReleaseDir)simpe.package.dll;$(SimPeReleaseDir)simpe.clst.dll;$(SimPeReleaseDir)simpe.splash.dll;$(SimPeReleaseDir)GDF.dll;$(SimPeReleaseDir)NetDocks.dll"
+          Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" Visible="false" />
+    <None Include="$(SimPeReleaseDir)..\SimPe Commandline\tgi.xml" Link="Data\tgi.xml"
+          CopyToOutputDirectory="PreserveNewest" Visible="false" />
+  </ItemGroup>
+
 </Project>

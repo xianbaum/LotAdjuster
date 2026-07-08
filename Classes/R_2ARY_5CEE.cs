@@ -1,4 +1,4 @@
-/***************************************************************************
+ï»¿/***************************************************************************
  *   Copyright (C) 2006 by Andi8104                                        *
  *   Andi8104@arcor.de                                                     *
  *                                                                         *
@@ -267,7 +267,7 @@ namespace LotExpander
                     byte[] DataNew = new byte[Data.Length + iWidth * iHeightDiff];
                     // Header and existing data
                     Array.Copy(Data, DataNew, Data.Length);
-                    //Am Ende einfügen
+                    //Am Ende einfÃ¼gen
                     for (int i = Data.Length; i < DataNew.Length; i++)
                     {
                         DataNew[i] = bDefaultValue;
@@ -294,7 +294,7 @@ namespace LotExpander
                 {
                     byte[] DataNew = new byte[Data.Length + iWidth * iHeightDiff];
                     Array.Copy(Data, DataNew, iHeaderSize);
-                    //Am Anfang einfügen
+                    //Am Anfang einfÃ¼gen
                     int iNewIndex = iHeaderSize;
                     for (int i = Data.Length; i < DataNew.Length; i++)
                     {

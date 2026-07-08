@@ -1,4 +1,4 @@
-/***************************************************************************
+ï»¿/***************************************************************************
  *   Copyright (C) 2006 by Andi8104                                        *
  *   Andi8104@arcor.de                                                     *
  *                                                                         *
@@ -173,7 +173,7 @@ namespace LotExpander
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     //Header
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Am Ende einfügen
+                    //Am Ende einfÃ¼gen
                     for (int i = 0; i < iDepth; i++)
                     {
                         float[] Dat = new float[iHeight];
@@ -242,7 +242,7 @@ namespace LotExpander
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     //Header
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Am Anfang einfügen
+                    //Am Anfang einfÃ¼gen
                     for (int i = 0; i < iDepth; i++)
                     {
                         // Pre-read the first set of floats, to use as the default values
@@ -321,7 +321,7 @@ namespace LotExpander
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     //Header
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Spaltenweise am Ende einfügen
+                    //Spaltenweise am Ende einfÃ¼gen
                     for (int i = 0; i < iDepth; i++)
                     {
                         for (int j = 0; j < iWidth; j++)
@@ -384,7 +384,7 @@ namespace LotExpander
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     //Header
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Spaltenweise am Anfang einfügen
+                    //Spaltenweise am Anfang einfÃ¼gen
                     for (int i = 0; i < iDepth; i++)
                     {
                         for (int j = 0; j < iWidth; j++)

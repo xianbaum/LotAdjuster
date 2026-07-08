@@ -1,4 +1,4 @@
-/***************************************************************************
+ï»¿/***************************************************************************
  *   Copyright (C) 2006 by Andi8104                                        *
  *   Andi8104@arcor.de                                                     *
  *                                                                         *
@@ -183,7 +183,7 @@ namespace LotExpander
                     BinaryWriter BW = new BinaryWriter(new MemoryStream(DataNew));
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Am Ende einfügen
+                    //Am Ende einfÃ¼gen
                     int iItemCount = 0;
                     int iData = bDefaultValue;
                     for (int i = 0; i < iDepth; i++)
@@ -250,7 +250,7 @@ namespace LotExpander
                     BinaryWriter BW = new BinaryWriter(new MemoryStream(DataNew));
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Am Anfang einfügen
+                    //Am Anfang einfÃ¼gen
                     int iItemCount = 0;
                     int iData = bDefaultValue;
                     for (int i = 0; i < iDepth; i++)
@@ -321,7 +321,7 @@ namespace LotExpander
                     BinaryWriter BW = new BinaryWriter(new MemoryStream(DataNew));
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Spaltenweise am Ende einfügen
+                    //Spaltenweise am Ende einfÃ¼gen
                     int iItemCount = 0;
                     int iData = bDefaultValue;
                     for (int i = 0; i < iDepth; i++)
@@ -394,7 +394,7 @@ namespace LotExpander
                     BinaryWriter BW = new BinaryWriter(new MemoryStream(DataNew));
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Spaltenweise am Anfang einfügen
+                    //Spaltenweise am Anfang einfÃ¼gen
                     int iItemCount = 0;
                     int iData = bDefaultValue;
                     for (int i = 0; i < iDepth; i++)

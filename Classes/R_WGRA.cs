@@ -1,4 +1,4 @@
-/***************************************************************************
+Ôªø/***************************************************************************
  *   Copyright (C) 2006 by Andi8104                                        *
  *   Andi8104@arcor.de                                                     *
  *                                                                         *
@@ -648,7 +648,7 @@ namespace LotExpander
                 }
             }
 
-            //Rest bleibt unver‰ndert
+            //Rest bleibt unver√§ndert
             Array.Copy(Data, iLengthOld, DataNew, iLengthNew, Data.Length - iLengthOld);
             Data = DataNew;
             PFD.SetUserData(Data, true);
@@ -852,7 +852,7 @@ namespace LotExpander
                 iLengthNew += iBytesPerObject;
             }
 
-            //Rest bleibt unver‰ndert
+            //Rest bleibt unver√§ndert
             Array.Copy(Data, iLengthOld, DataNew, iLengthNew, Data.Length - iLengthOld);
             // PFD.SetUserData(DataNew, true);
             Data = DataNew;

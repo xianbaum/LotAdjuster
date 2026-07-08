@@ -1,4 +1,4 @@
-/***************************************************************************
+ï»¿/***************************************************************************
  *   Copyright (C) 2006 by Andi8104                                        *
  *   Andi8104@arcor.de                                                     *
  *                                                                         *
@@ -308,7 +308,7 @@ namespace LotExpander
                 if (iWidthDiff > 0)
                 {
                     byte[] DataNew = new byte[Data.Length + iWidthDiff * iHeight * iDepth * iBytesPerObject];
-                    //Am Ende einfügen
+                    //Am Ende einfÃ¼gen
                     Array.Copy(Data, DataNew, iHeaderSize);
                     int iOldIndex = iHeaderSize;
                     int iNewIndex = iHeaderSize;
@@ -355,7 +355,7 @@ namespace LotExpander
                 if (iWidthDiff > 0)
                 {
                     byte[] DataNew = new byte[Data.Length + iWidthDiff * iHeight * iDepth * iBytesPerObject];
-                    //Am Anfang einfügen
+                    //Am Anfang einfÃ¼gen
                     Array.Copy(Data, DataNew, iHeaderSize);
                     int iOldIndex = iHeaderSize;
                     int iNewIndex = iHeaderSize;
@@ -407,7 +407,7 @@ namespace LotExpander
                 if (iHeightDiff > 0)
                 {
                     byte[] DataNew = new byte[Data.Length + iWidth * iHeightDiff * iDepth * iBytesPerObject];
-                    //Spaltenweise am Ende einfügen
+                    //Spaltenweise am Ende einfÃ¼gen
                     Array.Copy(Data, DataNew, iHeaderSize);
                     int iOldIndex = iHeaderSize;
                     int iNewIndex = iHeaderSize;
@@ -460,7 +460,7 @@ namespace LotExpander
                 if (iHeightDiff > 0)
                 {
                     byte[] DataNew = new byte[Data.Length + iWidth * iHeightDiff * iDepth * iBytesPerObject];
-                    //Spaltenweise am Anfang einfügen
+                    //Spaltenweise am Anfang einfÃ¼gen
                     Array.Copy(Data, DataNew, iHeaderSize);
                     int iOldIndex = iHeaderSize;
                     int iNewIndex = iHeaderSize;

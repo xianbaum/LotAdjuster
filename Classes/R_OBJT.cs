@@ -1,4 +1,4 @@
-/***************************************************************************
+﻿/***************************************************************************
  *   Copyright (C) 2006 by Andi8104                                        *
  *   Andi8104@arcor.de                                                     *
  *                                                                         *
@@ -304,7 +304,7 @@ namespace LotExpander
 
         private void cObject(BinaryReader BR, BinaryWriter BW, bool bPortal)
         {
-            //BR und BW m�ssen hinter BlockID stehn!
+            //BR und BW müssen hinter BlockID stehn!
             iObjectVersion = BR.ReadInt32();
             BW.Write(iObjectVersion);
             if (Test_PrintDebugInfo)

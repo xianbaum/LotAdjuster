@@ -1,4 +1,4 @@
-/***************************************************************************
+ï»¿/***************************************************************************
  *   Copyright (C) 2006 by Andi8104                                        *
  *   Andi8104@arcor.de                                                     *
  *                                                                         *
@@ -208,7 +208,7 @@ namespace LotExpander
                 {
                     byte[] DataNew = new byte[Data.Length + iWidthDiff * iHeight * iBytesPerObject];
                     // Insert "quarterlinewise" at the end (i.e. in increments of 1/4th of a line or row)
-                    //Zeilenweise am Ende einfügen
+                    //Zeilenweise am Ende einfÃ¼gen
                     Array.Copy(Data, DataNew, iHeaderSize);
                     int iOldIndex = iHeaderSize;
                     int iNewIndex = iHeaderSize;
@@ -254,7 +254,7 @@ namespace LotExpander
                 {
                     byte[] DataNew = new byte[Data.Length + iWidthDiff * iHeight * iBytesPerObject];
                     // Insert "quarterlinewise" at the beginning (i.e. in increments of 1/4th of a line or row)
-                    //Zeilenweise am Anfang einfügen
+                    //Zeilenweise am Anfang einfÃ¼gen
                     Array.Copy(Data, DataNew, iHeaderSize);
                     int iOldIndex = iHeaderSize;
                     int iNewIndex = iHeaderSize;
@@ -333,7 +333,7 @@ namespace LotExpander
                 {
                     byte[] DataNew = new byte[Data.Length + iWidth * iHeightDiff * iBytesPerObject];
                     Array.Copy(Data, DataNew, iHeaderSize);
-                    //Am Anfang einfügen
+                    //Am Anfang einfÃ¼gen
                     int iNewIndex = iHeaderSize;
                     for (int i = Data.Length; i < DataNew.Length; i++)
                     {

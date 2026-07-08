@@ -1,4 +1,4 @@
-/***************************************************************************
+ï»¿/***************************************************************************
  *   Copyright (C) 2006 by Andi8104                                        *
  *   Andi8104@arcor.de                                                     *
  *                                                                         *
@@ -157,7 +157,7 @@ namespace LotExpander
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     //Header
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Zeilenweise am Ende einfügen
+                    //Zeilenweise am Ende einfÃ¼gen
                     for (int i = 0; i < iHeight; i++)
                     {
                         float Dat = 0;
@@ -214,7 +214,7 @@ namespace LotExpander
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     //Header
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Zeilenweise am Anfang einfügen
+                    //Zeilenweise am Anfang einfÃ¼gen
                     for (int i = 0; i < iHeight; i++)
                     {
                         // Pre-read the first float, to use as the default value
@@ -277,7 +277,7 @@ namespace LotExpander
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     //Header
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Am Ende einfügen
+                    //Am Ende einfÃ¼gen
                     float[] Dat = new float[iWidth];
                     for (int i = 0; i < iHeight; i++)
                     {
@@ -333,7 +333,7 @@ namespace LotExpander
                     BinaryReader BR = SimPe.Helper.GetBinaryReader(Data);
                     //Header
                     BW.Write(BR.ReadBytes(iHeaderSize));
-                    //Am Anfang einfügen
+                    //Am Anfang einfÃ¼gen
                     // Pre-read the first set of floats, to use as the default values
                     float[] Dat = new float[iWidth];
                     for (int j = 0; j < iWidth; j++)
